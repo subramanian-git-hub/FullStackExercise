@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+    <title>Learning page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Full Stack Case Study</h1>
+    <div class="inputClassContainer">
+        <table>
+            <tr>
+                <th>Fields</th>
+                <th>User input</th>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" id="userName"></td>
+            </tr>
+            <tr>
+                <td>Age</td>
+                <td><input type="text" id="userAge"></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" class="maleColorClass" name="genderSelector" id="maleSelection" value="Male" checked=true>
+                        <label for="maleSelection" style="color: green;" id="male_label">Male</label>
+                    <input type="radio" class="femaleColorClass" name="genderSelector" id="femaleSelection" value="Female">
+                        <label for="femaleSelection" style="color: red;" id="female_label">Female</label>
+                </td>
+            </tr>
+            
+        </table>
+        <button id="button_add_update" onclick="redirectClickEvent()">Add User</button>
+    </div> 
+    
+
+    <div class="colorContainer">
+        <table>
+            <tr>
+                <th colspan="2">Gender color selector</th>
+            </tr>
+            <tr>
+                <td align="center">Male</td>
+                <td align="center">Female</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="maleColor" value="Green" checked="true" onclick="changeMaleColor('green')">
+                        <label style="color: green;">Green</label>
+                    <input type="radio" name="maleColor" value="Blue" onclick="changeMaleColor('blue')">
+                        <label style="color: blue;">Blue</label>
+                </td>
+                <td>
+                    <input type="radio" name="femaleColor" value="Red" checked="true" onclick="changeFemaleColor('red')">
+                        <label style="color: red;">Red</label>
+                    <input type="radio" name="femaleColor" value="Magenta" onclick="changeFemaleColor('magenta')">
+                        <label style="color:magenta;">Magenta</label>
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="loggerClass">
+        <table id="loggerTable">
+            <span>User entry table</span>
+            <tr>
+                <th align="center">Name</th>
+                <th align="center">Age</th>
+                <th align="center">Gender</th>
+                <th align="center">Action</th>
+            </tr>
+            
+        </table>
+    </div>
+    
+</body>
+</html>
